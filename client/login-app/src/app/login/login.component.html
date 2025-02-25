@@ -1,0 +1,101 @@
+<style>
+
+</style>
+
+<section class="login">
+  <div class="contentForm">
+    <div class="contentLogo">
+      <img src="assets/images/bp-full-shop.png" />
+    </div>
+    <form (ngSubmit)="onSubmit()" class="form" method="POST">
+      <h2>Já tenho registro</h2>
+      <div class="contentInput">
+        <img src="assets/images/mail-outline.svg" width="30" height="30" />
+        <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="E-mail" required>
+      </div>
+      <div class="contentInput">
+        <img src="assets/images/key-outline.svg" width="30" height="30"/>
+        <input type="password" id="password" name="password" [(ngModel)]="password"  placeholder="Senha">
+      </div>
+      <div class="contentOptions">
+        <label class="checkbox-container">
+          <input type="checkbox" class="checkbox">
+          <span class="checkbox-custom"></span> 
+          Lembrar de mim
+        </label>
+        <a href="/">Esqueceu sua senha?</a>
+      </div>
+      <button type="submit">
+        <img src="assets/images/login.svg" width="30" height="30" />
+        Log in
+      </button>
+      <h3>
+        Não tem uma conta?
+        <a href="/">
+          Registre-se
+        </a>
+      </h3>
+      <div *ngIf="loginError" class="error">{{ loginError }}</div>
+    </form>
+    <div class="contentLogo">
+      <img src="assets/images/bp-full.png" />
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Gestão <span>completa</span>:</h2>
+    <h3>Indústria | varejo | Distribuidores</h3>
+    <div class="contentIcons">
+      <div class="contentIcon">
+        <img src="assets/images/digital-marketing.png" />
+        <p>Planejamento & Briefing de Campanhas</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/settuing.png" />
+        <p>Produção de materiais</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/law.png" />
+        <p>Engenharia fiscal</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/supply-chain.png" />
+        <p>Supply Chain trade Marketing</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/truck.png" />
+        <p>Coleta industrial</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/warehouse.png" />
+        <p>Armazenagem nacionais, regionais e virtuais</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/cross-selling.png" />
+        <p>Vendas B2B | B2C | D2C</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/transportation.png" />
+        <p>Entregas multimodais & Last Mile</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/product-development.png" />
+        <p>Ativação em PDV e Positivação</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/graph.png" />
+        <p>Inteligência de Dados</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/360-degress.png" />
+        <p>Gestão completa de todos os serviços</p>
+      </div>
+      <div class="contentIcon">
+        <img src="assets/images/satisfaction.png" />
+        <p>Pesquisa NPS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
